@@ -67,12 +67,25 @@ module.exports = {
     bell: 'SOUND',
 
     // if true, selected text will automatically be copied to the clipboard
-    copyOnSelect: false
+    copyOnSelect: false,
 
     // URL to custom bell
     // bellSoundURL: 'http://example.com/bell.mp3',
 
     // for advanced config flags please refer to https://hyper.is/#cfg
+
+    hyperBorder: {
+      borderColors: ['#fc1da7', '#fba506'],
+      borderWidth: '4px',
+      animate: true,
+      borderAngle: '180deg',
+      borderRadiusInner:'8px'
+    },
+    hyperTabs: {
+      trafficButtons: true,
+      tabIconsColored: true,
+    
+    }
   },
 
   // a list of plugins to fetch and install from npm
@@ -81,7 +94,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ['hyperterm-atom-dark', 'hyperterm-paste', 'hyperlinks', "hyper-drop-file"],
+  plugins: ['hyperterm-atom-dark', 'hyperterm-paste', 'hyperlinks', "hyper-drop-file", "hypercwd", "hyper-search","hyper-quit","hyperborder","hyper-tabs-enhanced","hyperpower"],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
