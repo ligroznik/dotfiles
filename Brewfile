@@ -10,26 +10,29 @@ brew "wget"
 brew "yarn"
 brew "tldr"
 brew "mas"
-
+brew "node"
+brew "git"
 # Desktop applications
-cask "ukrainian-typographic-keyboard"
-cask "gpg-suite"
 cask "telegram"
 cask "google-chrome"
 cask "firefox"
-cask "dropbox"
-cask "vlc"
-cask "iterm2"
 cask "visual-studio-code"
 cask "slack"
 cask "steam"
-cask "transmission"
-cask "handbrake"
-cask "github"
-cask "multipass"
-cask "spotify"
+cask "1password"
 cask "notion"
-cask "bitwarden"
+cask "docker"
+cask "hyper"
+cask "swiftformat-for-xcode"
+cask "swiftlint"
+cask "discord"
+cask "whatsapp"
+cask "spark"
+cask "drawio"
+cask "figma"
+cask "skitch"
+cask "expressions"
+cask "battle-net"
 cask "java" unless system "/usr/libexec/java_home --failfast"
 
 # Quick Look plugins
@@ -38,5 +41,4 @@ cask "qlstephen" # https://github.com/whomwah/qlstephen
 cask "quicklook-json" # https://github.com/sindresorhus/quick-look-plugins
 cask "qlimagesize" # https://github.com/Nyx0uf/qlImageSize
 cask "webpquicklook" # https://github.com/dchest/webp-quicklook
- 
-mas "Pandan", id: 1569600264
+

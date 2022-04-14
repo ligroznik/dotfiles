@@ -224,6 +224,16 @@ bootstrap() {
   finish
 }
 
+spaceship() {
+  git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
+  ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+  finish
+}
+
+hyper(){
+  cp -f ./.hyper.js $HOME/.hyper.js
+}
+
 on_finish() {
   echo
   success "Setup was successfully done!"
@@ -259,6 +269,8 @@ main() {
   install_zsh "$*"
   install_dotfiles "$*"
   bootstrap "$*"
+  spaceship "$*"
+  hyper "$*"
   on_finish "$*"
 }
 

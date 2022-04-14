@@ -71,9 +71,13 @@ if [[ -f "$HOME/.zshlocal" ]]; then
 fi
 
 # Sourcing all zsh files from $DOTFILES/custom
-for file in "$DOTFILES/custom/"*.zsh; do
-  source "$file"
-done
+if A=$(find . -name "$DOTFILES/custom/"*.zsh -exec echo -n "1" \; ); [ "$A" != "" ]
+then
+  for file in "$DOTFILES/custom/"*.zsh; do
+    source "$file"
+  done
+fi
+
 
 # ------------------------------------------------------------------------------
 # Oh My Zsh
@@ -92,14 +96,14 @@ plugins=(
   extract
   ssh-agent
   gpg-agent
-  osx
+  macos
   gh
   vscode
   common-aliases
   command-not-found
   docker
 )
-
+ZSH_THEME="spaceship" 
 # ------------------------------------------------------------------------------
 # Dependencies
 # ------------------------------------------------------------------------------

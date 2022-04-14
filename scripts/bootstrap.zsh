@@ -12,7 +12,7 @@ _exists() {
 export DOTFILES=${DOTFILES:="$HOME/.dotfiles"}
 
 # Go to dotfiles directory
-cd $DOTFILES/scripts
+cd $DOTFILES
 
 # Homebrew Bundle
 if _exists brew; then

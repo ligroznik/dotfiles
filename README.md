@@ -1,9 +1,3 @@
-# Denys Dovhan’s dotfiles
-
-<p align="center">
-  <img alt="Spaceship with Hyper and One Dark" src="https://user-images.githubusercontent.com/10276208/36086434-5de52ace-0ff2-11e8-8299-c67f9ab4e9bd.gif" width="980px">
-</p>
-
 There are tons of useful things in here:
 
 - The usefulness of [“Oh My ZSH!”](http://ohmyz.sh/) is already built–in.
@@ -17,7 +11,15 @@ There are tons of useful things in here:
 - Git config, global `.gitignore` file and aliases.
 - Dotfiles synchronization (`sync.py`) with backup.
 - Restoring old dotfiles (`restore.py`) from backup.
-- A lot of [useful bins](https://github.com/denysdovhan/dotfiles/tree/master/bin).
+- A lot of [useful bins](https://github.com/
+
+
+
+
+
+
+
+/dotfiles/tree/master/bin).
 - `update` script for updating dotfiles, npm, brew, gems, etc.
 
 Missing feature? 🍴 Fork this repo and make it better!
@@ -29,13 +31,13 @@ Dotfiles are installed by running one of the following commands in your terminal
 **via `curl`**
 
 ```sh
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/denysdovhan/dotfiles/master/installer.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/ligroznik/dotfiles/master/installer.sh)"
 ```
 
 **via `wget`**
 
 ```sh
-bash -c "$(wget https://raw.githubusercontent.com/denysdovhan/dotfiles/master/installer.sh -O -)"
+bash -c "$(wget https://raw.githubusercontent.com/ligroznik/dotfiles/master/installer.sh -O -)"
 ```
 
 Tell Git who you are using these commands:
@@ -207,7 +209,3 @@ Resources that I used to make these dotfiles better:
 - [Artem Sapegin’s dotfiles](https://github.com/sapegin/dotfiles)
 - [Mathias’s dotfiles](https://github.com/mathiasbynens/dotfiles)
 - [Yet another cool story about bash prompt](http://habrahabr.ru/company/mailru/blog/145008/)
-
-## License
-
-MIT © [Denys Dovhan](https://denysdovhan.com)
